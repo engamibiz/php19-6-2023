@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            border:5px solid red;
+            border-radius: 50%; /* circle */
+            border-left-color: palevioletred;
+            border-top-color: green;
+            border-bottom-color: blue;
+            box-shadow:  0 0 5px gray;
+            transition: transform 0.5s; /* تنعيم الحركة في وقت قيمته نصف ثانية */
+        }
+        .c1:hover{
+            transform:rotate(360deg);  /*  حركة دوران */
+        }
+        .c2:hover{
+            transform:rotateY(180deg);  /*  حركة دوران */
+        }
+        .c3:hover{
+            transform:rotateX(180deg);  /*  حركة دوران */
+        }
+    </style>
+</head>
+<body>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+
+</body>
+</html>

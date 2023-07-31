@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <style>
+        div p{
+            color:red;
+        }
+        div > p{ /* الابن المباشر */
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, illum! Ullam cum nihil est provident unde. Voluptatum, ut dicta! Assumenda velit maiores autem, dolorem nesciunt quis veritatis iusto quia modi!</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quibusdam accusantium nisi non est dolorem, maiores iure impedit sint ut omnis modi odio quidem eius suscipit saepe porro consectetur dolore?</p>
+    </div>
+
+    <div>
+        <h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quibusdam accusantium nisi non est dolorem, maiores iure impedit sint ut omnis modi odio quidem eius suscipit saepe porro consectetur dolore?</p>
+        </h1>
+    </div>
+</body>
+</html>

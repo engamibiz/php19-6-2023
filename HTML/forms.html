@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+  
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Information</legend>
+            <label for="">Username</label>
+            <input type="text" placeholder="Username">
+            <label for="">Password</label>
+            <input type="password" placeholder="Password">
+            <label for="">Email</label>
+            <input type="email" placeholder="Email">
+            <label for="">Url</label>
+            <input type="url" placeholder="Website">
+        </fieldset>
+
+        <fieldset>
+            <legend>Other inputs</legend>
+            <label for="">Number</label>
+            <input type="number" placeholder="Number">
+
+            <label for="">Date</label>
+            <input type="date" placeholder="date">
+
+            <label for="">Color</label>
+            <input type="color" placeholder="color">
+
+            <label for="">File</label>
+            <input type="file" placeholder="file">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>checkbox</legend>
+            <!-- Id unique selector  -->
+            <input type="checkbox" id="accept">
+            <label for="accept">I accept the agreement</label>
+
+            <br>
+
+            <h4>Favorit Car</h4>
+            <input type="checkbox" id="BMW">
+            <label for="BMW">BMW</label>
+
+            <input type="checkbox" id="KIA">
+            <label for="KIA">KIA</label>
+
+            <input type="checkbox" id="MG">
+            <label for="MG">MG</label>
+           
+            <!-- ctrl c  -->
+            <!-- ctrl v  -->
+            <!-- alt shift arrowdown  -->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio</legend>
+            <h4>Gender</h4>
+            <input type="radio" id="Male" name="Gender">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender">
+            <label for="Female">Female</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Select</legend>
+            <select>
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+                <option>option4</option>
+            </select>
+
+            <select multiple>
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+                <option>option4</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>textarea</legend>
+            <textarea name="" id="" cols="100" rows="5" required></textarea>
+        </fieldset>
+
+        <input type="submit">
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+        <button type="button">button</button>
+    </form>
+</body>
+</html>
