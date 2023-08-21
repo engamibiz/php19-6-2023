@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGI COD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="topNav">
+        <div class="container">
+            <div class="flex">
+                <div class="leftTop">
+                    <i class="fa-solid fa-phone"></i> (629) 555-0129
+            
+                    <i class="fa-solid fa-envelope"></i> info@example.com
+                    <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina, 10299
+                </div>
+                <div class="rightTop">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div> 
+           
+        </div>
+    </div>
+<!--  NEW -->
+    <div class="menuContainer">
+        <div class="blueLayout">
+            <div class="rectangle"></div>
+
+        </div> <!-- BlueLayout-->
+       <div class="container">
+            <div class="flex menuHolder">
+                <div class="logo">
+                    <img src="img/logo-3.png" alt="">
+                </div>
+                <div class="menu">
+                        <a href="#" class="active">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Projects</a>
+        
+                        <a href="#">Blog</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                </div>
+                <div class="call flex">
+                    <div class="phone_blue">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p>Need help?</p>
+                        <p>(808) 555-0111</p>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+<section class="hero">
+    <div class="container">
+        <div class="flex">
+            <div >
+                <!-- first column -->
+                <h5>Market Analysis</h5>
+                <h1>
+                    We Turn Ideas
+Into Digital Reality
+                </h1>
+                <p>And In Order To Make A Business, Brand Advertising And Marketing Plays An Important Role. Similarly, In Making Cultivation Business A Brand, Good Slogans Are Necessary.
+                </p>
+                <a href="#" class="blue_btn">
+                    <div class="overlay_black"></div>
+                    <div class="btn_content">
+                    Discover More 
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img_holder">
+                <img src="img/2.png" alt="">
+                <div class="daily_activity">
+                    <img src="img/circle.png" alt="">
+                    <h6>Daily Activity</h6>
+                    <p>Lorem ipsum.</p>
+                </div><!-- Daily activity-->
+            </div><!-- img_holder -->
+            
+        </div>
+        
+    </div>
+</section>
+    
+
+<section class="provide">
+    <div class="container">
+        <h4>WE PROVIDE</h4>
+        <h2>Your partner in digital<br>
+            transformation</h2>
+            <div class="flex">
+                <div class="card">
+                    <img src="img/service1-1.jpg" width="100%" alt="">
+                    <div class="card_content">
+                        <div class="icon_holder">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                    <h4>Management</h4>
+                    <h3>Digital Advertising</h3>   
+                        <div onclick="makeLike(1)"><i class="fa-regular fa-thumbs-up"></i>   
+                            <span id="likes1">0</span>
+                        </div>             
+                    </div>
+                
+                </div>
+
+                <div class="card">
+                    <img src="img/service1-1.jpg" width="100%" alt="">
+                    <div class="card_content">
+                    <h4>Management</h3>
+                    <h3>Digital Advertising</h2>  
+                        <div onclick="makeLike(2)"><i class="fa-regular fa-thumbs-up"></i>   
+                            <span id="likes2">0</span>
+                        </div>                 
+                    </div>
+                
+                </div>
+
+
+                <div class="card">
+                    <img src="img/service1-1.jpg" width="100%" alt="">
+                    <div class="card_content">
+                    <h4>Management</h3>
+                    <h3>Digital Advertising</h2> 
+                        <div onclick="makeLike(3)"><i class="fa-regular fa-thumbs-up"></i>   
+                            <span id="likes3">0</span>
+                        </div>                  
+                    </div>
+                
+                </div>
+                
+            </div>
+    </div>
+</section>
+
+
+<div id="chatIcon" onclick="toggleMenu()">Chat</div>
+<div id="chatBox" class="chatBox">
+
+</div>
+
+<script>
+    let chatBox = document.getElementById('chatBox')
+    function showMenu(){
+        chatBox.style.display='block'
+    }
+    function toggleMenu(){
+        // chatBox.classList.add('show')
+        // chatBox.classList.remove('show')
+        chatBox.classList.toggle('show')
+    }
+    function makeLike(item){
+        let selector = "likes" + item
+        let sel= document.getElementById(selector)
+        let x = sel.innerText
+        x ++
+        sel.innerText=x
+    }
+</script>
+
+</body>
+</html>
