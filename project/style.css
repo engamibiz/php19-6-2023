@@ -49,5 +49,15 @@
         background-color: #02549881;
         width: 100%;
         height: 100%;
-        
+        display: none;
+      
     }
+    .boundaries{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card:hover  .overlay{
+        display: block;
+    }
+
