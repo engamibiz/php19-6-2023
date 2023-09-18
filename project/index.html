@@ -125,7 +125,7 @@
     </div>
   </section>
 
-
+    <button class="about_btn">Hide / Show</button>
   <section class="text-center py-5" id="about">
     <div class="container">
       <h5 class="fst-italic">Who we are</h5>
@@ -140,25 +140,40 @@
       </p>
       <div class="row g-5">
         <div class="col-md-4">
-          <div class="position-relative">
+          <div class="position-relative card">
             <div class="overlay p-5 ">
               <div class="boundaries border border-white w-100 h-100 text-white">
-                support team
+                <h3>support team</h3>
               </div>
             </div>
             <img src="img/support-team.jpg" class="img-fluid" alt="">
           </div>
         </div>
+
         <div class="col-md-4">
-          <div>
+          <div class="position-relative card">
+            <div class="overlay p-5 ">
+              <div class="boundaries border border-white w-100 h-100 text-white">
+                <h3>support team</h3>
+              </div>
+            </div>
             <img src="img/support-team.jpg" class="img-fluid" alt="">
           </div>
         </div>
+       
+
         <div class="col-md-4">
-          <div>
+          <div class="position-relative card">
+            <div class="overlay p-5 ">
+              <div class="boundaries border border-white w-100 h-100 text-white">
+                <h3>support team</h3>
+              </div>
+            </div>
             <img src="img/support-team.jpg" class="img-fluid" alt="">
           </div>
         </div>
+       
+       
       </div>
     </div>
   </section>
@@ -168,6 +183,12 @@
   <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+          $('.about_btn').click(function(){
+            $('#about').toggle(500)
+          })
+    </script>
 </body>
 
 </html>
